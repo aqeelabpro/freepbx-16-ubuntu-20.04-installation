@@ -27,6 +27,20 @@ then again use the above chmod command and then run
 ```
 Your FreePBX installation will now start.
 
+During installation you will have to choose the menu options that are required for asterisk and FreePBX to run like
+
+![image](https://github.com/aqeelabpro/freepbx-16-ubuntu-20.04/assets/93031839/e4e4b337-1805-4bb7-bd1f-20d2f5d1e6ef)
+
+![image](https://github.com/aqeelabpro/freepbx-16-ubuntu-20.04/assets/93031839/0090e592-0ef0-4d79-a9c9-e45222f54b1a)
+
+
+![image](https://github.com/aqeelabpro/freepbx-16-ubuntu-20.04/assets/93031839/45f8bf20-5957-45be-a262-15c18555f2df)
+
+
+![image](https://github.com/aqeelabpro/freepbx-16-ubuntu-20.04/assets/93031839/89f07af8-0d95-4821-b329-86318766ab8c)
+
+
+
 # Post Installation Steps
 
 ## Access FreePBX Web Interface
@@ -50,13 +64,17 @@ Click on the FreePBX Administration. You are redirected to the FreePBX login scr
 
 
  
-Type your administrator username, password then click Continue. 
+Type your administrator username, and password then click Continue. 
 
 After the successful login, you should see the FreePBX dashboard on the following screen.  
+
 
 ![image](https://github.com/aqeelabpro/freepbx-16-ubuntu-20.04/assets/93031839/ad825e73-355e-4f8d-a41b-02da2ed032f5)  
 
 
 
 # Happy VoIPing! 📞
+
+
+Images are taken from https://cloudinfrastructureservices.co.uk/
 
