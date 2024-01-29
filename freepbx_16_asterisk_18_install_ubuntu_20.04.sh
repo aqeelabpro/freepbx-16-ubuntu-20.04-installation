@@ -37,7 +37,7 @@ sed -i 's";radiuscfg => /usr/local/etc/radiusclient-ng/radiusclient.conf"radiusc
 sed -i 's";radiuscfg => /usr/local/etc/radiusclient-ng/radiusclient.conf"radiuscfg => /etc/radcli/radiusclient.conf"g' /etc/asterisk/cel.conf
 systemctl restart asterisk
 systemctl status asterisk.service 
-asterisk -rvvvvvvvv
+# asterisk -rvvvvvvvv
 apt install mariadb-server
 apt install apache2
 cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf_orig
