@@ -25,8 +25,10 @@ sudo usermod -aG audio,dialout asterisk
 sudo chown -R asterisk.asterisk /etc/asterisk
 sudo chown -R asterisk.asterisk /var/{lib,log,spool}/asterisk
 sudo chown -R asterisk.asterisk /usr/lib/asterisk
-nano /etc/default/asterisk
-nano /etc/asterisk/asterisk.conf
+# nano /etc/default/asterisk
+sed -i 's/#\(AST_USER="asterisk"\)/\1/g; s/#\(AST_GROUP="asterisk"\)/\1/g' /etc/default/asterisk
+# nano /etc/asterisk/asterisk.conf
+sed -i 's/;\(runuser = asterisk\)/\1/g; s/;\(rungroup = asterisk\)/\1/g' /etc/asterisk/asterisk.conf
 systemctl restart asterisk
 systemctl enable asterisk
 systemctl status asterisk.service 
