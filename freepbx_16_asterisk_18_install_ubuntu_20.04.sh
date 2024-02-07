@@ -62,6 +62,8 @@ cd freepbx
 systemctl stop asterisk
 ./start_asterisk start
 apt install nodejs npm
+#use only if got this error "Error! Unable to read /etc/asterisk/asterisk.conf or it was missing a directories section"
+#sudo cp /etc/asterisk/asterisk.conf.old /etc/asterisk/asterisk.conf
 ./install -n
 fwconsole ma disablerepo commercial
 fwconsole ma installall
