@@ -50,12 +50,12 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add -
 apt remove php*
 # Added new lines
- apt -y install software-properties-common
- add-apt-repository ppa:ondrej/php
- apt-get update
- apt -y install php7.4
- # END
- apt install php7.4 php7.4-{mysql,cli,common,imap,ldap,xml,fpm,curl,mbstring,zip,gd,gettext,xml,json,snmp}
+apt -y install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt-get update
+apt -y install php7.4
+# END
+apt install php7.4 php7.4-{mysql,cli,common,imap,ldap,xml,fpm,curl,mbstring,zip,gd,gettext,xml,json,snmp}
 apt install libapache2-mod-php7.4
 sudo sed -i 's/\(^upload_max_filesize = \).*/\120M/' /etc/php/7.4/apache2/php.ini
 sudo sed -i 's/\(^upload_max_filesize = \).*/\120M/' /etc/php/7.4/cli/php.ini
