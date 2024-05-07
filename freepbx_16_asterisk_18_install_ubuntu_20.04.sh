@@ -49,7 +49,6 @@ apt install -y lsb-release ca-certificates apt-transport-https software-properti
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/sury-php.list
 wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add -
 apt remove php*
-
 # Added new lines
  apt -y install software-properties-common
  add-apt-repository ppa:ondrej/php
