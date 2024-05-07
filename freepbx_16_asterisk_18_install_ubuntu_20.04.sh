@@ -6,7 +6,7 @@ apt update
 apt install subversion
 apt policy asterisk
 cd /usr/src/
-curl -O http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-18-current.tar.gz
+curl -O https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-18-current.tar.gz
 tar xvf asterisk-18-current.tar.gz
 cd asterisk-18*/
 contrib/scripts/get_mp3_source.sh
